@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0329</title>
+    <style>
+        * {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        body {
+            position: absolute;
+            width: 700px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background-color: beige;
+            margin-top: 50px;
+        }
+        table input {
+            position: relative;
+            border: 0px;
+            width: 100%;
+        }
+        fieldset {
+            position: relative;
+            width: 500px;
+        }
+        caption {
+            text-align: left;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 1.5em;
+            font-family: serif;
+            display: inline;
+        }
+        ol {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        code {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <h3>HTML과 알고지낸 무려 1년동안 내가 모르고 살아온 신비로운 type의 세계!</h3>
+        <li><a href="#first">form, input태그의 다양한 타입요소</a></li>
+        <li><a href="#second">Input 요소의 타입</a></li>
+        <li><a href="#third">HTML 입력 양식 (Forms) | HTML 입력(input) 요소 타입(type)</a></li>
+    </ol>
+
+    <hr>
+    <h1 id="first">form, input태그의 다양한 타입요소</h1>
+    <a href="https://yooniron.tistory.com/11" target="_blank">링크</a>
+
+    <form action="">text
+        <input type="text" name="search">
+    </form>
+    <form action="">textarea
+        <input type="textarea" name="search">
+    </form>
+    <form action="">password
+        <input type="password" name="password">
+    </form>
+    <form action="">radio <br>
+        <input type="radio" name="language" value="html" checked> HTML <br>
+        <input type="radio" name="language" value="css"> CSS <br>
+        <input type="radio" name="language" value="javascript"> JAVASCRIPT <br>
+        <input type="radio" name="language" value="cpp"> CPP <br>
+    </form>
+    <form action="">checkbox <br>
+        <input type="checkbox" name="language" value="html" checked> HTML <br>
+        <input type="checkbox" name="language" value="css"> CSS <br>
+        <input type="checkbox" name="language" value="javascript"> JAVASCRIPT <br>
+        <input type="checkbox" name="language" value="cpp"> CPP <br>
+    </form>
+    <form action="">file
+        <input type="file" name="upload_file" accept="image/*">
+    </form>
+    <form action="">select
+        <select name="language">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JAVASCRIPT</option>
+            <option value="cpp">CPP</option>
+        </select>
+    </form>
+    <form action="">
+        <button type="button" onclick="alert('클릭하셨습니다.')">버튼</button>
+    </form>
+    <form action="">
+        submit: <br>
+        <input type="text" name="name" value="">
+        <input type="submit" value="전송">
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>fieldset</legend>
+            이름: <br>
+            <input type="text" name="name"> <br>
+            이메일: <br>
+            <input type="text" name="email"> <br>
+            학번: <br>
+            <input type="text" name="studentNum"> <br><br>
+        </fieldset>
+    </form>
+
+    <table border="1">
+        <caption>Table</caption>
+        <tr>
+            <th rowspan="3">개인정보</th> <td>이름</td> <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>학과/학번</td> <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>연락처</td> <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>지원 분야</th> <td colspan="2"><input type="text"></td>
+        </tr>
+    </table>
+
+
+
+    <br><br><hr>
+    <h1 id="second">Input 요소의 타입</h1>
+    <a href="https://arajo.tistory.com/347" target="_blank">링크</a> <br>
+
+    <code>type="number"</code>
+    <input type="number" name="favnum" min="1" max="9">
+    <input type="submit" value="전송"> <br>
+
+    <code>type="range"</code>
+    <input type="range" name="favnum" min="1" max="9">
+    <input type="submit" value="전송"> <br>
+
+    <code>type="color"</code>
+    <input type="color" name="favcolor" value="#0033BB">
+    <input type="submit" value="전송"> <br>
+
+    <code>type="date"</code>
+    <input type="date" name="startday" min="1970-01-01" max="2023-12-31">
+    <input type="submit" value="전송"> <br>
+
+    <code>type="time"</code>
+    <input type="time" name="nowtime">
+    <input type="submit" value="전송"> <br>
+
+    <code>type="datetime-local"</code>
+    <input type="datetime-local" name="starttime">
+    <input type="submit" value="전송"> <br>
+
+    <code>type="month"</code>
+    <input type="month" name="nowmonth">
+    <input type="submit" value="전송"> <br>
+
+    <code>type="week"</code>
+    <input type="week" name="nthweek">
+    <input type="submit" value="전송"><br>
+
+    <code>type="email"</code>
+    <input type="email" name="email">
+    <input type="submit" value="전송"><br>
+
+    <code>type="tel"</code>
+    <input type="tel" name="tel">
+    <input type="submit" value="전송"><br>
+
+    <code>type="search"</code>
+    <input type="search" name="keyword">
+    <input type="submit" value="전송">
+
+    <br><br><hr>
+    <h1 id="third">HTML 입력 양식 (Forms) | HTML 입력(input) 요소 타입(type)</h1>
+    <a href="https://www.devkuma.com/docs/html/input-type/#google_vignette" target="_blank">링크</a>
+
+    <form action="/">
+        오잉 이게뭐지 form action="/"했더니 파일 뒤로감? <input type="text" name="username">
+        <input type="submit" value="전송">
+    </form>
+    <form action="/">
+        재설정버튼 <input type="text" name="username" value="과제나 해">
+        <input type="reset" value="재설정">
+    </form>
+
+    url입력하세요 <input type="url" name="url">
+    <input type="submit" value="전송">
+
+
+    <script src="./0329.js"></script>
+</body>
+</html>

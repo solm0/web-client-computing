@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hello {
+            background-color: aliceblue;
+            font-size: 80px;
+            font-family: 'Gulim';
+            font-weight: bold;
+        }
+        .hello:before {
+            width: 300px;
+            content: "hello";
+            background-color: yellow;
+            color: rebeccapurple;
+        }
+        .hello:after {
+            width: 300px;
+            content: "bye";
+            background-color: yellow;
+            color: rebeccapurple;
+        }
+        em {
+            color: coral;
+            font-family: serif;
+        }
+        caption {
+            text-align: left;
+            margin-left: 3px;
+            font-weight: bold;
+        }
+        thead {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <tr>
+        <td><img src="./1.webp" width="100"height="200"></td>
+        <td><img src="./2.png" width="100"height="200"></td>
+        <td><img src="./3.png" width="100"height="200"></td>
+    </tr>
+    <div class="hello">아ㄴ녕하세요~~~~과제가 너무 많아 과제가너무많아요살려주세요~~~과제가너무많아요주말에과제만해야돼요ㅜㅜㅠㅠㅠ
+        <br>
+        <em>흠..노트북 배터리가 15퍼센트인데 컴그까지 버틸 수 있을까?</em>
+    </div>
+    <img src="./4.png" width="500px">
+    <table border="1">
+        <caption>성적</caption>
+        <thead>
+            <tr>
+                <td>학생이름</td>
+                <td>중간고사</td>
+                <td>기말고사</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>정솔미</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>정솔미</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="1">
+        <tr> <th colspan="5">시간표</th></tr>
+        <tr> <th>mon</th> <th>tue</th> <th>wed</th> <th>thu</th><th>fri</th></tr>
+        <tr> <td>국어</td><td>수학</td><td>영어</td> <td>과학</td><td rowspan="3">휴강</td></tr>
+        <tr> <td colspan="4">점심시간</td></tr>
+        <tr> <td>국어</td><td>수학</td><td>영어</td> <td>과학</td></tr>
+    </table>
+</body>
+</html>
