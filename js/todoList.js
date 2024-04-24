@@ -23,18 +23,15 @@ save.addEventListener("click", (e) => {
         });
         delButton.addEventListener("mouseover", (e) => {
             
-            var count = 0;
             delButton.style.fontSize = "50px";
             delButton.innerText = "really?";
             body.style.backgroundColor = "grey";
-            count++;
 
             delButton.addEventListener("mouseout", (e) => {
                 delButton.innerText = "did you finished???"
                 delButton.style.color = "red";
                 body.style.backgroundColor = "black";
             });
-            console.log("mouseover")
         });
     }
 
