@@ -1,0 +1,113 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: blue;
+  &::selection {
+    background-color: lime;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: green;
+  text-decoration-thickness: 3px;
+  margin-bottom: 30px;
+  &::selection {
+    background-color: yellow;
+  }
+  position: relative;
+  &:hover {
+    background-color: cadetblue;
+  }
+}
+
+form {
+  position: relative;
+  &:hover {
+    background-color: cadetblue;
+  }
+}
+
+#container{
+  margin:50px auto;
+  width:600px;
+  padding:10px 20px; 
+  position: relative;
+  &:hover {
+    background-color: lime;
+  }
+}
+ul {
+  list-style: none;
+}
+#todoInfo {
+  margin-top:40px;
+}
+
+#todoInfo li {
+  font-size:1em;
+  line-height: 3;
+}
+#todoInfo label {
+  display:inline-block;
+  width:90px;
+}
+@font-face {
+  font-family: "scaryfont";
+  src: url(../files/The\ Centurion.otf);
+}
+#todoInfo input {
+  width:450px;
+  position: relative;
+  &:hover {
+    background-color: red;
+    color: black;
+    font-family: "scaryfont";
+    font-size: 80px;
+    overflow: visible;
+  }
+}
+
+button {
+  width:150px;
+  margin:20px 60px;
+  font-size:1em;
+  padding:5px 10px;
+  position: relative;
+  left: 50px;
+  position: relative;
+  &:hover {
+    background-color: red;
+    color: black;
+  }
+}
+
+#todoList {
+  width:500px;
+  margin-top:80px;
+  position:relative;
+  position: relative;
+  &:hover {
+    background-color: cadetblue;
+  }
+}
+
+#todoList li {
+  font-size:1em;
+  padding:10px;
+  border-bottom:1px solid #9a7171;
+  position: relative;
+}
+.delButton:hover {
+  cursor:pointer;
+}
+.delButton {  
+  padding:5px 10px;
+  font-size:0.8em;
+  position:absolute;  
+  right:10px;
+}

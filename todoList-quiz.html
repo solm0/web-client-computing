@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scary Todo List</title>
+  <link rel="stylesheet" href="css/todoList.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Scary Todo List</h1>
+    <p>write in engleish please and make sure you delete the list after finisheing</p>
+    <form>
+      <ul id="todoInfo">
+        <li>
+          <label for="title">Title</label>
+          <input type="text" id="title">
+        </li>    
+        <li>
+          <label for="comments">Comments</label>
+          <input type="text" id="comments">
+        </li>   
+      </ul>
+  
+      <button type="reset">Cancel</button>
+      <button id="save">Save</button>
+    </form>
+    
+    <ul id="todoList"></ul>
+  </div>
+  
+  <script src="js/todoList.js"></script>
+</body>
+</html>
